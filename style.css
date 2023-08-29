@@ -1,0 +1,158 @@
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  display: inline-block;
+}
+
+/* typography */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.header-logo {
+  font-size: 1.75rem;
+}
+
+.header-nav {
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.splash-slogan,
+.splash-location {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.splash-title {
+  font-size: 3rem;
+}
+
+.splash-btn {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* style */
+
+.splash {
+  background-image: url(./img/splash-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #777777;
+  background-blend-mode: multiply;
+  padding: 3em 1em 2em 1em;
+  color: #ffffff;
+  flex-direction: column;
+  text-align: center;
+}
+
+.splash-header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-nav {
+  margin-block: 1em;
+}
+
+.header-nav-link {
+  margin-inline: 1em;
+}
+
+.splash-slogan {
+  margin-top: 5em;
+}
+
+.splash-title {
+  margin-block: .25em;
+}
+
+.splash-location {
+  margin-bottom: 5em;
+}
+
+.splash-btn {
+  margin-bottom: 1em;
+  color: #5ac5b7;
+  border: 2px solid #3ea89a;
+  padding: .5em 4em;
+  border-radius: 3px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.splash-btn:hover,
+.splash-btn:focus {
+  background-color: #3ea89a;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
