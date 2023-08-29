@@ -21,6 +21,8 @@ li {
 
 a {
   display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* typography */
@@ -37,10 +39,14 @@ a {
   font-size: 1.75rem;
 }
 
-.header-nav {
+.header-nav-link {
   letter-spacing: 1px;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.current-page {
+  font-weight: 500;
 }
 
 .splash-slogan,
@@ -67,7 +73,7 @@ a {
   background-size: cover;
   background-color: #777777;
   background-blend-mode: multiply;
-  padding: 3em 1em 2em 1em;
+  padding: 3em .5em 2em .5em;
   color: #ffffff;
   flex-direction: column;
   text-align: center;
@@ -84,6 +90,17 @@ a {
 
 .header-nav-link {
   margin-inline: 1em;
+  border-bottom: 1px solid transparent;
+  transition: .5s;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  border-bottom: 1px solid #ffffff;
+}
+
+.current-page {
+  border-bottom: 1px solid #ffffff;
 }
 
 .splash-slogan {
