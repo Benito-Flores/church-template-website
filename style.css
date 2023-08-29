@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 body {
@@ -69,7 +69,8 @@ a {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
 }
 
 .about-us-txt {
@@ -84,7 +85,7 @@ a {
   background-size: cover;
   background-color: #777777;
   background-blend-mode: multiply;
-  padding: 3em .5em 2em .5em;
+  padding: 3em .5em 2.25em .5em;
   color: #ffffff;
   flex-direction: column;
   text-align: center;
@@ -154,7 +155,7 @@ a {
 }
 
 .about-us-sub-title {
-  margin: 1em 0 2em 0;
+  margin: .75em 0 2em 0;
 }
 
 .about-us-title {
