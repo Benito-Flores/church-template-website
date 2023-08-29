@@ -25,6 +25,15 @@ a {
   color: #ffffff;
 }
 
+.bottom-border {
+  border-bottom: 3px solid rgb(207, 205, 64);
+  width: 40px;
+  padding: 1px;
+  display: block;
+  margin-inline: auto;
+  margin-block: 2em;
+}
+
 /* typography */
 
 .uppercase {
@@ -65,7 +74,8 @@ a {
   font-weight: 500;
 }
 
-.about-us-sub-title {
+.about-us-sub-title,
+.worship-sub-title {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: bold;
@@ -75,6 +85,20 @@ a {
 
 .about-us-txt {
   line-height: 1.8;
+}
+
+.worship {
+  text-align: center;
+}
+
+.small-txt {
+  font-size: 1.25rem;
+}
+
+.worship-time-txt,
+.worship-txt {
+  font-size: 1.5em;
+  letter-spacing: 1px;
 }
 
 /* splash */
@@ -162,20 +186,47 @@ a {
   margin-top: 1em;
 }
 
-.bottom-border {
-  border-bottom: 3px solid rgb(207, 205, 64);
-  width: 40px;
-  padding: 1px;
-  display: block;
-  margin-inline: auto;
-  margin-block: 1em;
-}
-
 .about-us-txt {
   max-width: 500px;
   margin-inline: auto;
   margin-bottom: 2em;
 }
+
+/* worship */
+
+.worship {
+  background-image: url(./img/worship.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #707070;
+  background-blend-mode: multiply;
+  color: #ffffff;
+  padding: 3em 1em 2em 1em;
+}
+
+.worship > * {
+  margin-inline: auto;
+}
+
+.worship-sub-title {
+  margin: .75em 0 2em 0;
+}
+
+.worship-title {
+  margin-top: 1em; 
+}
+
+.worship-container {
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-block: 1em;
+}
+
+.worship-txt {
+  margin-bottom: 0.75em;
+}
+
 
 
 
