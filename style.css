@@ -65,7 +65,18 @@ a {
   font-weight: 500;
 }
 
-/* style */
+.about-us-sub-title {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.about-us-txt {
+  line-height: 1.8;
+}
+
+/* splash */
 
 .splash {
   background-image: url(./img/splash-img.jpg);
@@ -131,12 +142,34 @@ a {
   color: #ffffff;
 }
 
+/* section-one */
 
+.about-us {
+  background-image: url(./img/blue-snow.webp);
+  background-color: #4fbbac;
+  background-blend-mode: multiply;
+  text-align: center;
+  color: white;
+  padding: 3em 1em 2em 1em;
+}
 
+.about-us-title {
+  margin-top: 1em;
+}
 
+.bottom-border {
+  border-bottom: 3px solid white;
+  width: 40px;
+  padding: 1px;
+  display: block;
+  margin-inline: auto;
+  margin-block: 1em;
+}
 
-
-
+.about-us-txt {
+  max-width: 500px;
+  margin-inline: auto;
+}
 
 
 
