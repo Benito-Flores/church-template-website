@@ -119,6 +119,14 @@ a {
   line-height: 1.6;
 }
 
+.footer-txt,
+.footer-link,
+.footer-icon {
+  color: #ffffffde;
+  font-size: .8rem;
+  letter-spacing: 2px;
+}
+
 /* splash */
 
 .splash {
@@ -374,6 +382,42 @@ label {
 .form-btn:focus {
   background-color: #16668b;
 }
+
+/* footer-section */
+
+.footer-section {
+  flex-direction: column;
+  text-align: center;
+  padding: 3em 1em 3em 1em;
+  background-color: #273f6b;
+}
+
+.footer-section > * {
+  margin-inline: auto;
+}
+
+.footer-container {
+  margin-block: 1.5em;
+}
+
+.social-links {
+  flex-direction: column;
+}
+
+.social-links > * {
+  margin-block: .25em;
+}
+
+.footer-txt {
+  margin: .5em .5em;
+}
+
+.svg-container {
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 
 
