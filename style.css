@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 body {
@@ -181,10 +180,13 @@ a {
   margin-bottom: 1em;
   color: #5ac5b7;
   border: 2px solid #3ea89a;
-  padding: .5em 4em;
+  padding-block: .5em;
   border-radius: 3px;
   transition: .5s;
   cursor: pointer;
+  width: 90%;
+  max-width: 300px;
+  margin-inline: auto;
 }
 
 .splash-btn:hover,
@@ -193,7 +195,7 @@ a {
   color: #ffffff;
 }
 
-/* section-one */
+/* about-us-section */
 
 .about-us {
   background-image: url(./img/blue.jpg);
@@ -206,6 +208,11 @@ a {
 
 .about-us-sub-title {
   margin: .75em 0 2em 0;
+}
+
+.about-us-container {
+  flex-direction: column;
+  margin-inline: auto;
 }
 
 .about-us-title {
@@ -232,6 +239,11 @@ a {
 
 .worship > * {
   margin-inline: auto;
+}
+
+.worship-container-section {
+  flex-direction: column;
+  justify-content: center;
 }
 
 .worship-sub-title {
@@ -268,6 +280,8 @@ a {
 .outreach-txt {
   margin-block: 1em 2em;
   padding-inline: 1em;
+  max-width: 600px;
+  margin-inline: auto;
 }
 
 .articles-container {
@@ -291,6 +305,11 @@ a {
 .outreach-article,
 .article-img {
   display: block;
+}
+
+.outreach-article {
+  max-width: 400px;
+  margin-inline: auto;
 }
 
 .article-img {
@@ -333,7 +352,7 @@ a {
 .form-container {
   background-color: #1c3b75c7;
   width: 90%;
-  max-width: 800px;
+  max-width: 700px;
   margin-inline: auto;
   padding-block: 2em 3.5em;
 }
@@ -400,6 +419,15 @@ label {
   margin-block: 1.5em;
 }
 
+.footer-section-container {
+  flex-direction: column;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration: underline;
+}
+
 .social-links {
   flex-direction: column;
 }
@@ -417,7 +445,65 @@ label {
   justify-content: center;
 }
 
+/* media-queries */
 
+@media (min-width: 800px) {
+
+  .splash-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    margin-left: 2em;
+    font-size: 2rem;
+  }
+
+  .header-nav-link {
+    margin-right: 2em;
+    font-size: 1.5rem;
+  }
+
+  .splash-btn {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  .about-us-container,
+  .articles-container,
+  .worship-container-section,
+  .footer-section-container {
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    gap: 2em;
+    margin-inline: auto;
+  }
+
+  .worship-container-section {
+    justify-content: center;
+    gap: 15em;
+  }
+
+  .footer-section-container {
+    justify-content: center;
+    gap: 10em;
+  }
+
+  .footer-title > * {
+    font-size: 1.5rem;
+    margin-block: 0;
+  }
+
+  .footer-address > * {
+    font-size: 1rem;
+  }
+
+}
 
 
 
